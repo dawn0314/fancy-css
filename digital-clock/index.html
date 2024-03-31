@@ -90,13 +90,13 @@
           hoursDots + "<h2>" + addZero(hours) + "<br><span>Hours</span></h2>";
       }
 
-      setInterval(clock, 1000);
       function addZero(number) {
         if (number < 10) {
           return "0" + number;
         }
         return number;
       }
+      setInterval(clock, 1000);
     </script>
   </body>
 </html>
