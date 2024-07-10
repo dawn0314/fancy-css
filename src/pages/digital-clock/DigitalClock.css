@@ -1,23 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #282c34;
-}
-
 #clock {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #282c34;
 }
 
 #secDots,

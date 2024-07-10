@@ -1,11 +1,18 @@
-import React from "react";
+import { useState } from "react";
+import styles from "./CircleBar.module.css";
+import cs from "classnames/bind";
 
-const CircleProgressBar = ({ percentage, circleWidth }) => {
+const cx = cs.bind(styles);
+const circleWidth = "200";
+
+const CircleProgressBar = () => {
+  const [percentage, setPercentage] = useState(20);
+
   const radius = 85;
   const dashArray = radius * Math.PI * 2;
   const dashOffset = dashArray - (dashArray * percentage) / 100;
   return (
-    <div>
+    <div className={cx("first-progress-bar")}>
       <svg
         width={circleWidth}
         height={circleWidth}
@@ -23,14 +30,14 @@ const CircleProgressBar = ({ percentage, circleWidth }) => {
           cy={circleWidth / 2}
           strokeWidth="15px"
           r={radius}
-          className="circle-background"
+          className={cx("circle-background")}
         />
         <circle
           cx={circleWidth / 2}
           cy={circleWidth / 2}
           strokeWidth="15px"
           r={radius}
-          className="circle-progress"
+          className={cx("circle-progress")}
           style={{ strokeDasharray: dashArray, strokeDashoffset: dashOffset }}
           transform={`rotate(-90 ${circleWidth / 2} ${circleWidth / 2})`}
           stroke="url(#gradient)"
@@ -40,11 +47,22 @@ const CircleProgressBar = ({ percentage, circleWidth }) => {
           y="50%"
           dy="0.3em"
           textAnchor="middle"
-          className="circle-text"
+          className={cx("circle-text")}
         >
           {percentage}%
         </text>
       </svg>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        step="1"
+        value={percentage}
+        className={cx("progressInput")}
+        onChange={(e) => {
+          setPercentage(e.target.value);
+        }}
+      />
     </div>
   );
 };
