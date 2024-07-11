@@ -6,7 +6,7 @@ export default function Home() {
     <div className="wrapper">
       <Link to="/page-scroll">Page scroll with color match</Link>
       <Link to="/nav-indicator">Nav indicator</Link>
-      <Link to="/circle-progess-bar">Circular progress bar</Link>
+      <Link to="/circle-progress-bar">Circular progress bar</Link>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import { PageScroll, NavIndicator, CircleProgressBar } from "./pages";
 
