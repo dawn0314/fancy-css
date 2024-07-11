@@ -79,28 +79,28 @@ const PageScroll = () => {
       </section>
       <section
         id="about"
-        className={cx("about")}
+        className={cx("about-section")}
         style={{ "--clr": "#c56cf0" }}
       >
         About
       </section>
       <section
         id="services"
-        className={cx("services")}
+        className={cx("services-section")}
         style={{ "--clr": "#ffeaa7" }}
       >
         Services
       </section>
       <section
         id="portfolio"
-        className={cx("portfolio")}
+        className={cx("portfolio-section")}
         style={{ "--clr": "#17c0eb" }}
       >
         Portfolio
       </section>
       <section
         id="contact"
-        className={cx("contact")}
+        className={cx("contact-section")}
         style={{ "--clr": "#fd79a8" }}
       >
         Contact

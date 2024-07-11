@@ -1,25 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background: #222;
+  height: 100vh;
+  box-sizing: border-box;
 }
-
-// @mixin list {
-//   width: 400px;
-//   height: 60px;
-//   background-color: #fff;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
 
 .navigation-container {
   position: relative;
@@ -34,7 +20,7 @@ body {
   ul {
     display: flex;
     list-style: none;
-    width: 350px;
+    width: 400px;
     li {
       position: relative;
       width: 70px;
@@ -84,7 +70,7 @@ body {
     transition-delay: 0.25s;
 
     &::before {
-      opacity: 0.5;
+      // opacity: 0.5;
       transition: 0.5s;
       transition-delay: 0.25s;
     }
@@ -122,9 +108,6 @@ body {
       box-shadow: -15px 18px #fff;
     }
   }
-  // .first-nav {
-  //   @include list;
-  // }
 
   ul li:nth-child(1).active ~ .indicator {
     transform: translateX(calc(70px * 0));

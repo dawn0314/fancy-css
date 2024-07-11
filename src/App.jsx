@@ -1,9 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-// import DigitalClock from "./pages/digital-clock/DigitalClock";
-import PageScroll from "./pages/page-scroll/PageScroll";
-import NavIndicator from "./pages/nav-indicator/NavIndicator";
+import { PageScroll, NavIndicator, CircleProgressBar } from "./pages";
 
 function App() {
   return (
@@ -13,6 +11,10 @@ function App() {
         {/* <Route path="/digital-clock" Component={DigitalClock}></Route> */}
         <Route path="/page-scroll" Component={PageScroll}></Route>
         <Route path="/nav-indicator" Component={NavIndicator}></Route>
+        <Route
+          path="/circle-progress-bar"
+          Component={CircleProgressBar}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
