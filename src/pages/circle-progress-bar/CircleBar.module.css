@@ -14,7 +14,7 @@
   min-height: 100vh;
   background: #222;
 }
-svg {
+.circle {
   width: 30vw;
 }
 .progressInput {

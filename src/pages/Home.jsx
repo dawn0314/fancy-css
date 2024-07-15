@@ -7,6 +7,7 @@ export default function Home() {
       <Link to="/page-scroll">Page scroll with color match</Link>
       <Link to="/nav-indicator">Nav indicator</Link>
       <Link to="/circle-progress-bar">Circular progress bar</Link>
+      <Link to="/tilt-hover">3D tilt hover effet</Link>
     </div>
   );
 }

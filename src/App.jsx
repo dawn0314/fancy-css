@@ -1,7 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import { PageScroll, NavIndicator, CircleProgressBar } from "./pages";
+import {
+  PageScroll,
+  NavIndicator,
+  CircleProgressBar,
+  tiltHover,
+} from "./pages";
 
 function App() {
   return (
@@ -15,6 +20,7 @@ function App() {
           path="/circle-progress-bar"
           Component={CircleProgressBar}
         ></Route>
+        <Route path="/tilt-hover" Component={tiltHover} />
       </Routes>
     </BrowserRouter>
   );

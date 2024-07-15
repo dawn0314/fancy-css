@@ -15,6 +15,7 @@ export default function CircleProgressBar() {
     <div className={cx("wrapper")}>
       <div className={cx("first-progress-bar")}>
         <svg
+          className={cx("circle")}
           width={circleWidth}
           height={circleWidth}
           viewBox={`0 0 ${circleWidth} ${circleWidth}`}
